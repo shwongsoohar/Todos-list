@@ -7,19 +7,24 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0"/>  
 		
 		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-		<script src="main.js"></script>
+		
 	</head>
 		<body>
+            
+            <ul id="list-todos">
+                <!-- no need for an li tag here -->	
+            </ul>
 			
 			<form id="add-todo-form">
-				<p><input type="text"><input type="submit"></p>
-			
-		<ul id="list-todos">
-			<il>
-			
-			</il>		
-		</ul>
+                <p><input type="text"><input type="submit"></p>
+                <!-- Better to move the todos outside the form -->
 			</form>
+            
+            <!-- 
+                Need to move this to the bottom of the page. 
+                This allows the HTML above to load before the JS is executed. 
+            --> 
+            <script src="main.js"></script>
 	</body>
 </html>
 	
